@@ -1,0 +1,163 @@
+<!--write a web page using html css-->
+<html>
+<head>
+<style>
+#outer
+{
+height:auto;
+width:100%;
+margin:0px auto;
+}
+#header
+{
+height:150px;
+width:100%;
+}
+#logo{
+height:150px;
+width:20%;
+background:blue;
+float:left;
+}
+#title
+{
+width:80%;
+height:130px;
+float:left;
+color:white;
+padding-top:20px;
+text-align:center;
+font-size:60px;
+font-weight:bold;
+background:orange;
+text-shadow:3px 4px 3px red;
+}
+#menu{
+width:100%;
+height:50px;
+background:black;
+}
+#menu a
+{
+color:white;
+font-size:32px;
+text-decoration:none;
+margin-left:80px;
+}
+#menu a:hover
+{
+color:white;
+background:red;
+padding:5px;
+}
+#part
+{
+width:100%;
+height:350px;
+}
+#slider
+{
+width:40%;
+height:350px;
+background:silver;
+float:left;
+}
+#noti
+{
+width:60%;
+height:350px;
+background:navy;
+float:left;
+}
+#content
+{
+width:100%;
+height:500px;
+color:white;
+padding:2px;
+font-size:20px;
+background:green;
+}
+#footer
+{
+width:100%;
+height:60px;
+color:white;
+font-size:27px;
+font-weight:bold;
+text-align:center;
+background:navy;
+}
+</style>
+<script>
+var arrImg=["b1.jpg","b2.jpg","ab1.jpg","ab2.jpg"];
+var index=0;
+function moveSlider() 
+{
+document.getElementById("imgslider").src=arrImg[index];
+index++;
+if(index==arrImg.length)
+{
+index=0;
+}
+
+window.setTimeout("moveSlider()",1500);
+}
+</script>
+</head>
+<body onload="moveSlider()">
+<div id="outer">
+<div id="header">
+<div id="logo">
+<img src="logo.png" height="150px" width="100%"/>
+</div>
+<div id="title">
+Hewett Polytechnic Lucknow 
+</div>
+</div>
+<div id="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+<a href="#">Gallery</a>
+<a href="#">Faclity</a>
+<a href="#">Login</a>
+</div>
+<div id="part">
+<div id="slider">
+<img id="imgslider" src="b2.jpg" height="350px" width="100%"/>
+</div>
+<div id="noti">
+<marquee direction="up" onmouseover="stop()" 
+onmouseout="start()" style="color:white;font-size:28px;font-weight:bold">
+<ul>
+<li>Your Registration form last Date is 23-03-2022</li>
+<li>Your Registration form last Date is 23-03-2022</li>
+<li>Your Registration form last Date is 23-03-2022</li>
+<li>Your Registration form last Date is 23-03-2022</li>
+<li>Your Registration form last Date is 23-03-2022</li>
+<li>Your Registration form last Date is 23-03-2022</li>
+</ul>
+</marquee>
+</div>
+</div>
+<div id="content">
+Hewett Polytechnic was originally started at Gorakhpur in 1904.Some-Time in 1908 the institution was shifted from Gorakhpur to Lucknow in a rented building at Jagat Narain Road ,the main reason being that Lucknow was the capital of Avadh enjoying a central position in Uttar Pradesh.
+
+Onwards the institution by virtue of well-trained staff and their spirit of great enterprises progressed by leaps and bounds. It enjoyed not only country wide popularity but a good number of student, from Middle East, Iran, Tibbet, Bhutan, Ceylon etc. had their training in it. In 1934 the institution was formally recognized by the. And at a later stage by the Govt. of India also.
+Prior to 1957 the institution did not receive any assistance or aid from any quarter -public or private. In 1957 the institution received a token grant-in-aid by the state Govt. and subsequently received substantial grants by the state Govt. and Union Govt. for equipment and building and the net deficit was met by Govt funds. At its inception the institute ran with a single branch of civil Engineering
+
+In 1957, the institution shifted from hired building to its own premises in Mahanagar, Lucknow. Ten kilometers distant from Charbagh northern Railway Station and Bus-Station, this polytechnic now possesses 45 Bigha’s of land.
+
+In 1958-59 the institution was permitted by the state Govt. to start two additional courses i.e. Diploma in Electrical and Mechanical Engineering in addition to the Civil Engineering branch, each of three years duration. Shortly afterward a change in nomenclature of the institution from Hewett Engineering School to Hewett Polytechnic was affected at the instance of the Government.
+
+The institute is running four courses in Civil, Electrical, Mechanical Engineering and Information Technology with intake of 60 Students in each branch.As regards norms and standards of training the polytechnic earnestly intends to follow the guide lines as laid down by the A.I.C.T.E. statutory apex body on technical education.
+</div>
+<div id="footer">Desgin And Develope By Mecatredz Technology Team</div>
+</div>
+</body>
+</html>
+
+
+
+
